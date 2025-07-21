@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Computer Vision Demos</title>
+</head>
+<body>
+    <h1>Computer Vision Demo Videos</h1>
+    <ul>
+        {% for demo in demos %}
+        <li>
+            <h3>{{ demo.title }}</h3>
+            <iframe width="560" height="315" src="{{ demo.url }}" frameborder="0" allowfullscreen></iframe>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
